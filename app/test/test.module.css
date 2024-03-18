@@ -1,0 +1,15 @@
+.parent{
+    background-color: rgb(172, 172, 36);
+    height: 50px;
+    overflow: hidden;
+
+
+}
+
+.child{
+    background-color: blue;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    
+}

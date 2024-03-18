@@ -1,4 +1,5 @@
 .wrapper{
+    border: rgb(49, 17, 195) dashed 1px;
     max-width: 1024px;
     margin: auto;
 }

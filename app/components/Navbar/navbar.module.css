@@ -1,5 +1,16 @@
 .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+  position: relative;
+  padding: 2rem 1rem;
+  z-index: 10;
   border-bottom: 1px grey solid;
+
+  
+  /* border-bottom: 1px grey solid;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,7 +18,7 @@
   flex-direction: column;
   width: fit-content;
   position: absolute;
-  z-index: 2;
+  z-index: 2; */
 }
 
 .logo {

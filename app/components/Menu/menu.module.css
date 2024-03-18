@@ -1,14 +1,5 @@
 .list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 1rem;
-  margin-top: 1rem;
-  font-weight: 500;
-  max-width: 768px;
-  list-style: none;
-  width: 25rem;
+  display: none;
 }
 .item {
   width: fit-content;
@@ -27,18 +18,22 @@
 }
 @media (min-width: 768px) {
   .list {
+    list-style: none;
+    display: flex;
     flex-direction: row;
-    padding: 0;
+    justify-content: space-between;
+    padding: 0 1rem;
     align-items: center;
     margin-top: 0;
     width: auto;
+    font-weight: 500;
+    max-width: 768px;
   }
-  .links{
+  .links {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
     width: auto;
-
   }
 }
