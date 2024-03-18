@@ -1,0 +1,29 @@
+import Image from "next/image";
+import Link from "next/link";
+import { IoLanguageSharp } from "react-icons/io5";
+import Menu from "../Menu/Menu";
+import styles from "./navbar.module.css";
+
+const Navbar = () => {
+  return (
+    <div className={styles.navbar}>
+        <div>
+          <Image
+            src="/LogoColor.svg"
+            alt="code2steps logo"
+            className={styles.code2stepsLogo}
+            width={80}
+            height={20}
+            priority
+          />
+        </div>
+      
+      <Menu />
+    
+        <IoLanguageSharp className={styles.language} />
+     
+    </div>
+  );
+};
+
+export default Navbar;
