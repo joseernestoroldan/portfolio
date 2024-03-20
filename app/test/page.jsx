@@ -1,18 +1,41 @@
-import React from 'react'
-import styles from './test.module.css'
+import React from "react";
+import styles from "./test.module.css";
 
 const TestPage = () => {
   return (
-    <div className={styles.parent} >
-        <div className={styles.child}>1</div>
-        {/* <div className={styles.child}>2</div>
-        <div className={styles.child}>3</div>
-        <div className={styles.child}>4</div>
-        <div className={styles.child}>5</div>
-        <div className={styles.child}>6</div>
-        <div className={styles.child}>7</div> */}
+    <div className={styles.container}>
+      <div className={styles.card}>
+        <div className={styles.card1}></div>
+        <div className={styles.right}>
+          <div className={styles.card2}></div>
+          <div className={styles.card3}></div>
+          <div className={styles.card3}></div>
+          <div className={styles.card3}></div>
+          <div className={styles.card3}></div>
+          <div className={styles.bottom}>
+            <div className={styles.card4}></div>
+            <div className={styles.card4}></div>
+            <div className={styles.card4}></div>
+          </div>
+        </div>
+      </div>
+      <div className={styles.card}>
+        <div className={styles.card1}></div>
+        <div className={styles.right}>
+          <div className={styles.card2}></div>
+          <div className={styles.card3}></div>
+          <div className={styles.card3}></div>
+          <div className={styles.card3}></div>
+          <div className={styles.card3}></div>
+          <div className={styles.bottom}>
+            <div className={styles.card4}></div>
+            <div className={styles.card4}></div>
+            <div className={styles.card4}></div>
+          </div>
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default TestPage
+export default TestPage;

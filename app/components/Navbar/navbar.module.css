@@ -4,21 +4,14 @@
   align-items: center;
   width: 100%;
   flex-direction: row;
-  position: relative;
+  position: fixed;
   padding: 2rem 1rem;
   z-index: 10;
   border-bottom: 1px grey solid;
+  top: 0;
 
-  
-  /* border-bottom: 1px grey solid;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0;
-  flex-direction: column;
-  width: fit-content;
-  position: absolute;
-  z-index: 2; */
+
+  max-width: 1300px;
 }
 
 .logo {
@@ -34,20 +27,26 @@
   height: 1.25rem;
   color: grey;
 }
-
+.containerLanguage{
+  width: 30px;
+}
 @media (min-width: 768px) {
   .navbar {
     width: 100%;
     flex-direction: row;
-    position: relative;
+    position: fixed;
     align-items: center;
     padding: 2rem 1rem;
-    z-index: 0;
   }
   .logo {
     justify-content: center;
   }
+  .containerLanguage{
+    width: 80px;
+  }
 }
+
+
 
 @media (prefers-color-scheme: dark) {
   .code2stepsLogo {

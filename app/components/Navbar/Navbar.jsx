@@ -22,7 +22,9 @@ const Navbar = () => {
 
       <Menu />
 
-      <IoLanguageSharp className={styles.language} />
+      <div className={styles.containerLanguage}><IoLanguageSharp className={styles.language} /></div>
+
+      
     </div>
   );
 };
