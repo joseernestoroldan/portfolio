@@ -1,8 +1,8 @@
 .parent {
-  border: 1px dashed red;
+  /* border: 1px dashed red; */
   position: relative;
   top: 6.3rem;
-  height: 100vh;
+  height: auto;
 }
 
 .blur {

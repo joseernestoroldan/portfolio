@@ -9,7 +9,7 @@ import { SiNetlify } from "react-icons/si";
 import { TbBrandVercel } from "react-icons/tb";
 
 const WorksPage = async () => {
-  const works = await getData("wgorks");
+  const works = await getData("works");
   console.log(works);
   return (
     <div className={generalStyles.parent}>

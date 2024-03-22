@@ -9,6 +9,7 @@
   z-index: 10;
   border-bottom: 1px grey solid;
   top: 0;
+  background-color: rgba(255, 255, 255, 1);
 
 
   max-width: 1300px;
@@ -49,6 +50,9 @@
 
 
 @media (prefers-color-scheme: dark) {
+  .navbar{
+    background-color: rgba(0, 0, 0, 1);
+  }
   .code2stepsLogo {
     filter: invert(1);
   }
