@@ -18,7 +18,6 @@
 }
 .technologies {
   padding-top: 1rem;
-  padding-left: 2rem;
 }
 
 .heading {
@@ -38,9 +37,11 @@
   object-fit: cover;
 }
 .subHeading{
-    background-color: rgba(94, 94, 94, 0.751);
+    border-bottom: gray solid 1px;
+    margin-bottom: 5px;
     text-align: center;
     font-size: 1.5rem;
+
 
 }
 
