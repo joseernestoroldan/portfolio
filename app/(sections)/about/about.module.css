@@ -28,6 +28,7 @@
   font-size: 1.2rem;
   margin-top: 1rem;
   text-indent: 1rem;
+  padding: 1rem;
 }
 .photo {
   filter: grayscale();
@@ -68,7 +69,7 @@
   }
 
   .paragraph {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 1rem;
     text-indent: 1rem;
   }
