@@ -8,13 +8,13 @@ const token = process.env.API_TOKEN;
 export const client = createClient({
   projectId,
   dataset,
-  apiVersion, 
-  useCdn: true, 
+  apiVersion,
+  useCdn: false,
   token,
 });
 
 export async function getData(myquery) {
-  const query = groq`*[_type == "${myquery}"]{
+  const query = groq`*[_type == '${myquery}']{
     _id,
     _createdAt,
     title,
@@ -22,7 +22,7 @@ export async function getData(myquery) {
     netlify,
     git,
     vercel,
-    "image": mainImage.asset->url,
+    "image": mainImage.asset->url
   }`;
   const data = await client.fetch(query);
   return data;
