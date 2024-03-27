@@ -2,6 +2,8 @@ import React from "react";
 import generalStyles from "./../sectiongeneral.module.css";
 import styles from "./contact.module.css";
 import { client } from "@/client";
+import Button from "./button/Button";
+import { redirect } from "next/navigation";
 
 const ContactPage = () => {
 
@@ -16,13 +18,13 @@ const ContactPage = () => {
       number: number,
       message: message,
     };
-
     try {
       await client.create(contact)
     } catch (error) {
       console.log(error)
       throw new Error("Failed to create user")
     }
+    redirect("/contactsent")
   }
 
 
@@ -78,10 +80,7 @@ const ContactPage = () => {
         cols="30"
         rows="10"
       ></textarea>
-
-      <button className={styles.button}>
-        Enviar
-      </button>
+   <Button/>
     </form>
       </div>
     </div>
