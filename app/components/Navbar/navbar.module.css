@@ -1,0 +1,59 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+  position: fixed;
+  padding: 2rem 1rem;
+  z-index: 10;
+  border-bottom: 1px grey solid;
+  top: 0;
+  background-color: rgba(255, 255, 255, 1);
+
+
+  max-width: 1300px;
+}
+
+.logo {
+  width: 60px;
+  height: 16px;
+  filter: invert(1);
+  display: flex;
+  justify-content: flex-start;
+}
+
+.language {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: grey;
+}
+.containerLanguage{
+  width: 30px;
+}
+@media (min-width: 768px) {
+  .navbar {
+    width: 100%;
+    flex-direction: row;
+    position: fixed;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+  .logo {
+    justify-content: center;
+  }
+  .containerLanguage{
+    width: 80px;
+  }
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  .navbar{
+    background-color: rgba(0, 0, 0, 1);
+  }
+  .code2stepsLogo {
+    filter: invert(1);
+  }
+}

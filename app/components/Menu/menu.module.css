@@ -1,0 +1,39 @@
+.list {
+  display: none;
+}
+.item {
+  width: fit-content;
+}
+
+.links {
+  padding: 1rem 0;
+  width: 24rem;
+  color: inherit;
+  display: block;
+}
+
+.links:hover {
+  color: grey;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1rem;
+    align-items: center;
+    margin-top: 0;
+    width: auto;
+    font-weight: 500;
+    max-width: 768px;
+  }
+  .links {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    width: auto;
+  }
+}

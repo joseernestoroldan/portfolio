@@ -1,0 +1,9 @@
+.wrapper{
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    position:relative;
+    top: 0rem;
+    
+}
