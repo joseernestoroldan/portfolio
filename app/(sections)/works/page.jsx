@@ -62,7 +62,7 @@ const WorksPage = async () => {
                 </Link>
               )}
               {work.vercel && (
-                <Link href={work.vercel}>
+                <Link href={work.vercel}> 
                   <TbBrandVercel className={styles.vercel} />
                 </Link>
               )}
