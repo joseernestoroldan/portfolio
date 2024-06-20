@@ -13,7 +13,7 @@ import { FaExternalLinkSquareAlt } from "react-icons/fa";
 const WorksPage = async () => {
   //revalidatePath("./works")
   const works = await getData("works");
-  console.log(works)
+  console.log(works);
   return (
     <div className={generalStyles.parent}>
       <div className={generalStyles.blur}>
@@ -22,32 +22,50 @@ const WorksPage = async () => {
 
       <div className={styles.container}>
         {works.map((work) => (
-          
           <div className={styles.card} key={work._id}>
             <div className={styles.screenShot}>
-              <Image
-                className={styles.image}
-                src={work.image}
-                alt={work.title}
-                width={230}
-                height={140}
-              />
+              <Link href={""}>
+                <Image
+                  className={styles.image}
+                  src={work.image}
+                  alt={work.title}
+                  width={230}
+                  height={140}
+                />
+              </Link>
             </div>
+
             <div className={styles.title}>
               <h2>{work.title}</h2>
             </div>
             <div className={styles.description}>
-              <p className={styles.paragraph}>
-                {work.description}
+              <p className={styles.paragraph}>{work.description}</p>
+              <p className={styles.readMore}>
+                <Link href={"/"}>Read more</Link>
               </p>
-              <p className={styles.readMore}><Link  href={"/"}>Read more</Link></p>
             </div>
             <div className={styles.links}>
               Links:
-              <FaExternalLinkSquareAlt className={styles.externalLink}/>
-              <FaGithub className={styles.gitHub} />
-              <SiNetlify className={styles.netlify} />
-              <TbBrandVercel className={styles.vercel} />
+              {work.externalLink && (
+                <Link href={work.externalLink}>
+                  <FaExternalLinkSquareAlt className={styles.externalLink} />
+                </Link>
+              )}
+              {work.git && (
+                <Link href={work.git}>
+                  <FaGithub className={styles.gitHub} />
+                </Link>
+              )}
+              {work.netlify && (
+                <Link href={work.netlify}>
+                  <SiNetlify className={styles.netlify} />
+                </Link>
+              )}
+              {work.vercel && (
+                <Link href={work.vercel}>
+                  <TbBrandVercel className={styles.vercel} />
+                </Link>
+              )}
             </div>
           </div>
         ))}

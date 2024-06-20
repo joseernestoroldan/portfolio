@@ -60,10 +60,11 @@
 .paragraph {
   grid-column: 1/9;
   grid-row: 1/8;
-  color: inherit;
+  color: rgb(192, 192, 192);
   font-size: 1rem;
   font-weight: 400;
-  font-style: italic;
+  text-align: left;
+  
 }
 
 .readMore {
@@ -76,11 +77,12 @@
 }
 .links {
   display: flex;
-  justify-content: space-between;
+  justify-content:flex-start;
   align-items: center;
   font-size: small;
   grid-column: 5/13;
   grid-row: 14/15;
+  
 }
 
 @media (min-width: 768px) {
@@ -106,7 +108,7 @@
 
   .links {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     font-size: 1rem;
     font-weight: 600;
@@ -119,6 +121,8 @@
     width: 1.2rem;
     height: 1.2rem;
     color: gray;
+    margin: 0 0.5rem;
+    
 }
 
 @media (prefers-color-scheme: dark) {
